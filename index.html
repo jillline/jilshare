@@ -17,104 +17,89 @@
   <script>
     async function sendShare() {
       const result = await liff.shareTargetPicker([
-        {
-          "type": "flex",
-          "altText": "Flex Message",
-          "contents": {
-            "type": "bubble",
-            "body": {
-              "type": "box",
-              "layout": "vertical",
-              "spacing": "md",
-              "contents": [
-                {
-                  "type": "text",
-                  "text": "BROWN'S ADVENTURE",
-                  "size": "xl",
-                  "gravity": "center",
-                  "weight": "bold",
-                  "wrap": true
-                },
-                {
-                  "type": "box",
-                  "layout": "vertical",
-                  "spacing": "sm",
-                  "margin": "lg",
-                  "contents": [
-                    {
-                      "type": "box",
-                      "layout": "baseline",
-                      "spacing": "sm",
-                      "contents": [
-                        {
-                          "type": "text",
-                          "text": "Date",
-                          "flex": 1,
-                          "size": "sm",
-                          "color": "#AAAAAA"
-                        },
-                        {
-                          "type": "text",
-                          "text": "Monday 25, 9:00PM",
-                          "flex": 4,
-                          "size": "sm",
-                          "color": "#666666",
-                          "wrap": true
-                        }
-                      ]
-                    },
-                    {
-                      "type": "box",
-                      "layout": "baseline",
-                      "spacing": "sm",
-                      "contents": [
-                        {
-                          "type": "text",
-                          "text": "Place",
-                          "flex": 1,
-                          "size": "sm",
-                          "color": "#AAAAAA"
-                        },
-                        {
-                          "type": "text",
-                          "text": "LINE Thailand",
-                          "flex": 4,
-                          "size": "sm",
-                          "color": "#666666",
-                          "wrap": true
-                        }
-                      ]
-                    },
-                    {
-                      "type": "box",
-                      "layout": "vertical",
-                      "margin": "xxl",
-                      "contents": [
-                        {
-                          "type": "spacer"
-                        },
-                        {
-                          "type": "image",
-                          "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/linecorp_code_withborder.png",
-                          "size": "xl",
-                          "aspectMode": "cover"
-                        },
-                        {
-                          "type": "text",
-                          "text": "You can enter the theater by using this code instead of a ticket",
-                          "margin": "xxl",
-                          "size": "xs",
-                          "color": "#AAAAAA",
-                          "wrap": true
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
+      {
+    "type": "flex",
+    "altText": "This is a flex",
+    "contents":{
+  "type": "bubble",
+  "size": "giga",
+  "body": {
+    "type": "box",
+    "layout": "horizontal",
+    "contents": [
+      {
+        "type": "image",
+        "url": "https://drive.google.com/uc?id=1pBXP4ISfbyNoIejAaAm96cl85YeIXYw6",
+        "size": "full",
+        "aspectMode": "cover",
+        "aspectRatio": "1:1",
+        "gravity": "center"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [],
+        "position": "absolute",
+        "background": {
+          "type": "linearGradient",
+          "angle": "0deg",
+          "endColor": "#00000000",
+          "startColor": "#00000099"
+        },
+        "width": "100%",
+        "height": "40%",
+        "offsetBottom": "0px",
+        "offsetStart": "0px",
+        "offsetEnd": "0px"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "baseline",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "ธรรม",
+                    "color": "#a9a9a9",
+                    "size": "xxl"
+                  }
+                ],
+                "spacing": "xs"
+              },
+              {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": []
+              }
+            ],
+            "spacing": "xs"
           }
-        }
+        ],
+        "position": "absolute",
+        "offsetBottom": "0px",
+        "offsetStart": "0px",
+        "offsetEnd": "0px",
+        "paddingAll": "20px"
+      }
+    ],
+    "paddingAll": "0px",
+    "position": "relative"
+  },
+  "action": {
+    "type": "postback",
+    "label": "action",
+    "data": "hello",
+    "displayText": "*สิ่งที่จะดำรงพระพุทธศาสนาได้ตามความเป็นจริงก็คือ ความเข้าใจพระธรรมวินัยอย่างถูกต้อง และการน้อมประพฤติปฏิบัติตาม ด้วยความเคารพอย่างยิ่งในพระรัตนตรัย  *ดังนั้น หนทางเดียวที่จะดำรงพระพุทธศาสนาได้ก็คือ การฟังพระธรรม สนทนาธรรม เพื่อเข้าใจถูกต้องในความเป็นธรรม และเผยแพร่ความถูกต้องตามพระธรรมวินัยแก่ผู้ที่สนใจ"
+  }
+}
+}
       ])
       if (result) {
         alert(`[${result.status}] Message sent!`)
