@@ -9,8 +9,7 @@
     button { display: none; width: 50%; padding: 16px 0; margin: 16px auto }
   </style>
 </head>
-<body><div imgalign="center">
-  <img src="http://drive.google.com/uc?export=view&id=1z7wKN-0KZdhk-30SIEgApDI9bbNGzmhw" width="600px" height="200px"><br/><br/>
+<body>
   <button id="btnShare" onclick="sendShare()">Share Target Picker</button>
   <button id="btnLogin" onclick="liff.login()">Log In</button>
   <button id="btnLogOut" onclick="logOut()">Log Out</button>
@@ -18,103 +17,305 @@
   <script>
     async function sendShare() {
       const result = await liff.shareTargetPicker([
-  {
-  "type": "flex",
-  "altText": "Flex Message",
-  "contents": {
-  "type": "bubble",
-  "body": {
-    "type": "box",
-    "layout": "vertical",
-    "contents": [
-      {
+        {
+          "type": "flex",
+          "altText": "Flex Message",
+          "contents": {
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "hero": {
         "type": "image",
-        "url": "https://i.pinimg.com/originals/af/bb/0c/afbb0c7798268a088deafd34be7285ad.jpg",
         "size": "full",
-        "aspectRatio": "9:16",
-        "aspectMode": "cover"
+        "aspectRatio": "20:13",
+        "aspectMode": "cover",
+        "url": "https://drive.google.com/uc?id=1JzoL4DzS8ymF9CuY75E-6Lo06yFxCsMu"
       },
-      {
+      "body": {
         "type": "box",
         "layout": "vertical",
-        "contents": [
-          {
-            "type": "image",
-            "url": "https://cdn.pixabay.com/photo/2016/07/10/17/54/kids-1508121_960_720.jpg",
-            "size": "3xl",
-            "aspectMode": "cover"
-          }
-        ],
-        "position": "absolute",
-        "borderWidth": "2px",
-        "borderColor": "#000000",
-        "cornerRadius": "150px",
-        "offsetStart": "20%",
-        "offsetTop": "15%"
-      },
-      {
-        "type": "box",
-        "layout": "vertical",
+        "spacing": "sm",
         "contents": [
           {
             "type": "text",
-            "text": "Profile",
-            "size": "xxl",
-            "color": "#ff0000"
-          }
-        ],
-        "position": "absolute",
-        "offsetStart": "38%",
-        "offsetTop": "50%"
-      },
-      {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "text",
-            "text": "ด.ช. กำเอิบ คารูอึ",
-            "size": "xxl",
-            "color": "#000000"
-          }
-        ],
-        "position": "absolute",
-        "offsetStart": "15%",
-        "offsetTop": "60%"
-      },
-      {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "text",
-            "text": "Facbook เพียงคลิกปุ่มนี้",
-            "size": "md",
-            "color": "#ff00ff",
-            "margin": "md"
+            "text": "ไม่เสียค่าโฆษณาไม่เสียค่าบรอดแคส",
+            "wrap": true,
+            "weight": "bold",
+            "size": "xl"
           },
           {
-            "type": "button",
-            "action": {
-              "type": "uri",
-              "label": "Facebook",
-              "uri": "http://linecorp.com/"
-            },
-            "style": "primary",
-            "margin": "md"
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "ส่งได้ไม่จำกัดไม่เสียค่ารายเดือน",
+                "wrap": true,
+                "weight": "bold",
+                "size": "xl",
+                "flex": 0
+              }
+            ]
           }
         ],
-        "position": "absolute",
-        "offsetStart": "25%",
-        "offsetTop": "70%"
+        "margin": "none"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "style": "primary",
+            "action": {
+              "type": "uri",
+              "label": "ซื้อเลย",
+              "uri": "https://shop.line.me/@774rimte/product/320662332"
+            }
+          },
+          {
+            "type": "text",
+            "text": "เลื่อนไปด้านซ้ายเพื่อดูรูปต่อไป",
+            "margin": "md",
+            "style": "italic",
+            "weight": "bold",
+            "align": "center",
+            "gravity": "center",
+            "adjustMode": "shrink-to-fit",
+            "color": "#cfe0f0"
+          }
+        ]
       }
-    ],
-    "paddingAll": "0px"
-  }
-},
-    "type" : "flex"
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover",
+        "url": "https://drive.google.com/uc?id=1AybKnKOzW5SCHNC3Ktek72AVto5dS_5B"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "สร้างไลน์แชทบอท FB เพจและLine OA",
+            "wrap": true,
+            "weight": "bold",
+            "size": "xl"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "ตอบได้ทั้ง เพจ และไลน์ OA",
+                "wrap": true,
+                "weight": "bold",
+                "size": "xl",
+                "flex": 0
+              }
+            ]
+          }
+        ],
+        "margin": "none"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "style": "primary",
+            "action": {
+              "type": "uri",
+              "label": "ดูสินค้า",
+              "uri": "https://shop.line.me/@774rimte/product/320766483"
+            }
+          },
+          {
+            "type": "text",
+            "text": "เลื่อนไปด้านซ้ายเพื่อดูรูปต่อไป",
+            "margin": "md",
+            "style": "italic",
+            "weight": "bold",
+            "align": "center",
+            "gravity": "center",
+            "adjustMode": "shrink-to-fit",
+            "color": "#cfe0f0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover",
+        "url": "https://drive.google.com/uc?id=1jjDmFAx3HeYliwNLquXuMQQt31chUiJ3"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "สร้างบัญชีทั่วไป 1 ,ไลน์มายช็อป 1 ",
+            "wrap": true,
+            "weight": "bold",
+            "size": "xl"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "ระยะเวลาทำงาน 2 วัน (หลังได้รับข้อมูลครบถ้วน)",
+                "wrap": true,
+                "weight": "bold",
+                "size": "xl",
+                "flex": 0
+              }
+            ]
+          }
+        ],
+        "margin": "none"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "style": "primary",
+            "action": {
+              "type": "uri",
+              "label": "ดูสินค้า",
+              "uri": "https://shop.line.me/@774rimte/product/320766426"
+            }
+          },
+          {
+            "type": "text",
+            "text": "เลื่อนไปด้านซ้ายเพื่อดูรูปต่อไป",
+            "margin": "md",
+            "style": "italic",
+            "weight": "bold",
+            "align": "center",
+            "gravity": "center",
+            "adjustMode": "shrink-to-fit",
+            "color": "#cfe0f0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "size": "full",
+        "aspectRatio": "20:13",
+        "aspectMode": "cover",
+        "url": "https://drive.google.com/uc?id=1jABij67S_CUR_f5A1eomVOC6Mh9w_muk"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "สร้างบัญชีทั่วไป 1 บัญชี",
+            "wrap": true,
+            "weight": "bold",
+            "size": "xl"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "text",
+                "text": "ริชเมนู 1 แบบ",
+                "wrap": true,
+                "weight": "bold",
+                "size": "xl",
+                "flex": 0
+              }
+            ]
+          }
+        ],
+        "margin": "none"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "style": "primary",
+            "action": {
+              "type": "uri",
+              "label": "ดูสินค้า",
+              "uri": "https://shop.line.me/@774rimte/product/320766380"
+            }
+          },
+          {
+            "type": "text",
+            "text": "เลื่อนไปด้านซ้ายเพื่อดูรูปต่อไป",
+            "margin": "md",
+            "style": "italic",
+            "weight": "bold",
+            "align": "center",
+            "gravity": "center",
+            "adjustMode": "shrink-to-fit",
+            "color": "#cfe0f0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "flex": 1,
+            "gravity": "center",
+            "action": {
+              "type": "uri",
+              "label": "เพิ่มเติม-กดที่นี่",
+              "uri": "https://lin.ee/oVNnn9D"
+            }
+          }
+        ]
+      },
+      "styles": {
+        "hero": {
+          "backgroundColor": "#FCE1F8"
+        }
+      }
+    }
+  ]
 }
-} ])
+        }
+      ])
       if (result) {
         alert(`[${result.status}] Message sent!`)
       } else {
